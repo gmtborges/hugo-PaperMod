@@ -1,4 +1,4 @@
-<div class="social-icons">
+<div class="social-icons flex gap-3 justify-end">
     {{- range . }}
     <a href="{{ trim .url " " }}" target="_blank" rel="noopener noreferrer me" title="{{ (.title | default .name) | title }}">
         {{ partial "svg.html" . }}
